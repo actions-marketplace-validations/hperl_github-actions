@@ -25,6 +25,7 @@ inputs:
     default: "grpc-api.code-intelligence.com:443"
   git_reference:
     description: "Git reference used when pulling code from the repository to be fuzzed"
+    required: false
 runs:
   using: "docker"
   image: "docker://cifuzz/cictl:2.18.1"
